@@ -1,0 +1,36 @@
+sample,[M],Solvent,Volume [mL/mL],Stir Rod,Flow Rate [mL/h]
+CK001,0.015,water,20/20,bar,130
+CK002,0.01,water,20/20,bar,130
+CK003,0.0075,water,20/20,bar,130
+CK004,0.005,water,50/100,bar,130
+CK005,0.0025,water,50/100,bar,130
+CK006,0.00125,water,50/100,bar,130
+CK007,0.015,water,50/100,bar,130
+CK008,0.01,water,50/100,bar,130
+CK009,0.0075,water,50/100,bar,130
+CK010,0.005,water,20/20,bar,130
+CK011,0.0025,water,20/20,bar,130
+CK012,0.00125,water,20/20,bar,130
+CK013,0.015,Isobutanol,20/20,bar,130
+CK014,0.015,Isobutanol,20/20,bar,130
+CK015,0.01,Isobutanol,20/20,bar,130
+CK016,0.0075,Isobutanol,20/20,Rod only,130
+CK017,0.01,water,20/20,loop,130
+CK018,0.015,water,20/20,loop,130
+CK019,0.015,Isobutanol,20/20,loop,130
+CK020,0.01,Isobutanol,20/20,loop,130
+CK021,0.0075,water,20/20,loop,130
+CK022,0.005,water,20/20,loop,130
+CK023,0.0025,water,20/20,loop,130
+CK024,0.00125,water,20/20,loop,130
+CK025,0.0075,Isobutanol,20/20,bar,130
+CK026,0.005,Isobutanol,20/20,bar,130
+CK027,0.0025,Isobutanol,20/20,bar,130
+CK028,0.00125,Isobutanol,20/20,bar,130
+CK029,0.01,Benzylalcohol,20/20,bar,130
+CK030,0.01,Benzylalcohol,20/20,loop,130
+CK031,0.015,Benzylalcohol,20/20,bar,130
+CK032,0.0075,Benzylalcohol,20/20,bar,130
+CK033,0.005,Benzylalcohol,20/20,bar,130
+CK034,0.0025,Benzylalcohol,20/20,bar,130
+CK035,0.00125,Benzylalcohol,20/20,bar,130

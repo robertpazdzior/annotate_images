@@ -1,0 +1,5 @@
+annotated_images/*
+annotated_images/*/*
+source_images/*
+.vscode/*
+venv

@@ -1,0 +1,5 @@
+[formatting]
+    font_size = 32          # font size [px]
+    stroke_width = 2        # thickness of black stroke around text
+    position_x = 10         # annotation X anchor position [px]
+    position_y = 10         # annotation Y anchor position [px]
