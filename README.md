@@ -18,7 +18,9 @@ below:
 ## Requirements
 - Python 3.10+
 - Pillow (the Python image library)
-    - Install using `pip 
+    - Install using:
+
+      ```pip install Pillow```
 
 ## Usage
 
