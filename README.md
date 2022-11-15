@@ -40,7 +40,7 @@ below:
     1. Using the `cd` command, navigate to the script directory in the terminal.
     1. Run the script using the following terminal command:
 
-       ```py ./annotation.csv ./source_images ./annotated_images```
+       ```py ./annotate.py ./annotation.csv ./source_images ./annotated_images```
        
        This will output all annotated images to a sub-folder in
        `annotated_images/` with today's date and the current time.
