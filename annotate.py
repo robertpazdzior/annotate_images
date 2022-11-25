@@ -7,7 +7,7 @@ import os
 import toml
 from PIL import (Image,
                  ImageDraw,
-                 ImageFont, 
+                 ImageFont,
                  UnidentifiedImageError)
 
 logging.basicConfig(level=logging.WARNING)
@@ -33,6 +33,9 @@ parser.add_argument('output_dir',
 parser.add_argument('-v', '--verbose', action='store_true',
     # required=True,
     )
+parser.add_argument('-d', '--debug', action='store_true',
+    # required=True,
+    )
 
 
 def import_annotation(annotations_csv=''):
@@ -40,7 +43,7 @@ def import_annotation(annotations_csv=''):
     # Read in CSV to list of dicts
     with open(annotations_csv, encoding='utf8') as annot:
         reader = DictReader(annot)
-        annot_list_dicts = [d for d in reader]
+        annot_list_dicts = list(reader)
 
     # convert sample row to primary dict keys with annotation objects
     annot_sample_keyed = {}
@@ -56,6 +59,8 @@ def annotate_img(img:Image.Image, annotation:dict, formatting:dict):
     default_font_size = formatting['font_size']
     font = ImageFont.truetype(r"C:\Windows\Fonts\LTYPE.TTF", default_font_size)
     text = ''
+    if not annotation:
+        return None
     for sample,vals in annotation.items():
         text = text + sample
         for title,val in vals.items():
@@ -102,6 +107,9 @@ if __name__ == "__main__":
     if args.verbose:
         logger.level = logging.INFO
         # logging.getLogger('PIL').setLevel(logging.WARNING)
+    if args.debug:
+        logger.level = logging.DEBUG
+        # logging.getLogger('PIL').setLevel(logging.WARNING)
 
     with open('./config.toml', encoding='utf8') as cfg:
         config = toml.load(cfg)
@@ -120,4 +128,5 @@ if __name__ == "__main__":
             image,
             lookup_annotation(filename, annotations),
             config['formatting'])
-        ann_img.save(output_dir + filename)
+        if ann_img:
+            ann_img.save(output_dir + filename)
